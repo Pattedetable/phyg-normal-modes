@@ -40,7 +40,7 @@ class Ui_MainWindow(object):
 
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget) # Quit
         self.pushButton_2.setObjectName("pushButton_2")
-        self.gridLayout.addWidget(self.pushButton_2, 14, 0, 1, 3)
+        self.gridLayout.addWidget(self.pushButton_2, 17, 0, 1, 3)
 
 #        self.pushButton = QtWidgets.QPushButton(self.centralwidget) # Export video
 #        self.pushButton.setObjectName("pushButton")
@@ -48,11 +48,11 @@ class Ui_MainWindow(object):
 
         self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget) # Restart
         self.pushButton_3.setObjectName("pushButton_3")
-        self.gridLayout.addWidget(self.pushButton_3, 13, 0, 1, 3)
+        self.gridLayout.addWidget(self.pushButton_3, 16, 0, 1, 3)
 
 
         spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout.addItem(spacerItem, 12, 0, 1, 1)
+        self.gridLayout.addItem(spacerItem, 15, 0, 1, 1)
 
 
         self.radioButton = QtWidgets.QRadioButton(self.centralwidget) # Fondamental
@@ -60,18 +60,26 @@ class Ui_MainWindow(object):
         self.radioButton.setAutoExclusive(False)
         self.gridLayout.addWidget(self.radioButton, 0, 0, 1, 3)
 
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 1, 0, 1, 1)
+
         self.horizontalSlider = QtWidgets.QSlider(self.centralwidget)
         self.horizontalSlider.setMinimum(0)
         self.horizontalSlider.setMaximum(10)
         self.horizontalSlider.setPageStep(5)
         self.horizontalSlider.setOrientation(QtCore.Qt.Horizontal)
         self.horizontalSlider.setObjectName("horizontalSlider")
-        self.gridLayout.addWidget(self.horizontalSlider, 1, 0, 1, 3)
+        self.gridLayout.addWidget(self.horizontalSlider, 2, 0, 1, 3)
 
         self.radioButton2 = QtWidgets.QRadioButton(self.centralwidget) # 2e harmonique
         self.radioButton2.setObjectName("radioButton2")
         self.radioButton2.setAutoExclusive(False)
-        self.gridLayout.addWidget(self.radioButton2, 2, 0, 1, 3)
+        self.gridLayout.addWidget(self.radioButton2, 3, 0, 1, 3)
+
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setObjectName("label_2")
+        self.gridLayout.addWidget(self.label_2, 4, 0, 1, 1)
 
         self.horizontalSlider2 = QtWidgets.QSlider(self.centralwidget)
         self.horizontalSlider2.setMinimum(0)
@@ -79,12 +87,16 @@ class Ui_MainWindow(object):
         self.horizontalSlider2.setPageStep(5)
         self.horizontalSlider2.setOrientation(QtCore.Qt.Horizontal)
         self.horizontalSlider2.setObjectName("horizontalSlider2")
-        self.gridLayout.addWidget(self.horizontalSlider2, 3, 0, 1, 3)
+        self.gridLayout.addWidget(self.horizontalSlider2, 5, 0, 1, 3)
 
         self.radioButton3 = QtWidgets.QRadioButton(self.centralwidget) # 3e harmonique
         self.radioButton3.setObjectName("radioButton3")
         self.radioButton3.setAutoExclusive(False)
-        self.gridLayout.addWidget(self.radioButton3, 4, 0, 1, 3)
+        self.gridLayout.addWidget(self.radioButton3, 6, 0, 1, 3)
+
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setObjectName("label_3")
+        self.gridLayout.addWidget(self.label_3, 7, 0, 1, 1)
 
         self.horizontalSlider3 = QtWidgets.QSlider(self.centralwidget)
         self.horizontalSlider3.setMinimum(0)
@@ -92,12 +104,16 @@ class Ui_MainWindow(object):
         self.horizontalSlider3.setPageStep(5)
         self.horizontalSlider3.setOrientation(QtCore.Qt.Horizontal)
         self.horizontalSlider3.setObjectName("horizontalSlider3")
-        self.gridLayout.addWidget(self.horizontalSlider3, 5, 0, 1, 3)
+        self.gridLayout.addWidget(self.horizontalSlider3, 8, 0, 1, 3)
 
         self.radioButton4 = QtWidgets.QRadioButton(self.centralwidget) # 4e harmonique
         self.radioButton4.setObjectName("radioButton4")
         self.radioButton4.setAutoExclusive(False)
-        self.gridLayout.addWidget(self.radioButton4, 6, 0, 1, 3)
+        self.gridLayout.addWidget(self.radioButton4, 9, 0, 1, 3)
+
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setObjectName("label_4")
+        self.gridLayout.addWidget(self.label_4, 10, 0, 1, 1)
 
         self.horizontalSlider4 = QtWidgets.QSlider(self.centralwidget)
         self.horizontalSlider4.setMinimum(0)
@@ -105,12 +121,16 @@ class Ui_MainWindow(object):
         self.horizontalSlider4.setPageStep(5)
         self.horizontalSlider4.setOrientation(QtCore.Qt.Horizontal)
         self.horizontalSlider4.setObjectName("horizontalSlider4")
-        self.gridLayout.addWidget(self.horizontalSlider4, 7, 0, 1, 3)
+        self.gridLayout.addWidget(self.horizontalSlider4, 11, 0, 1, 3)
 
         self.radioButton5 = QtWidgets.QRadioButton(self.centralwidget) # 5e harmonique
         self.radioButton5.setObjectName("radioButton5")
         self.radioButton5.setAutoExclusive(False)
-        self.gridLayout.addWidget(self.radioButton5, 8, 0, 1, 3)
+        self.gridLayout.addWidget(self.radioButton5, 12, 0, 1, 3)
+
+        self.label_5 = QtWidgets.QLabel(self.centralwidget)
+        self.label_5.setObjectName("label_5")
+        self.gridLayout.addWidget(self.label_5, 13, 0, 1, 1)
 
         self.horizontalSlider5 = QtWidgets.QSlider(self.centralwidget)
         self.horizontalSlider5.setMinimum(0)
@@ -118,7 +138,7 @@ class Ui_MainWindow(object):
         self.horizontalSlider5.setPageStep(5)
         self.horizontalSlider5.setOrientation(QtCore.Qt.Horizontal)
         self.horizontalSlider5.setObjectName("horizontalSlider5")
-        self.gridLayout.addWidget(self.horizontalSlider5, 9, 0, 1, 3)
+        self.gridLayout.addWidget(self.horizontalSlider5, 14, 0, 1, 3)
 
 
         self.canvas = FigureCanvas(self.figure) # Graph
@@ -128,7 +148,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.canvas.sizePolicy().hasHeightForWidth())
         self.canvas.setSizePolicy(sizePolicy)
         self.canvas.setObjectName("canvas")
-        self.gridLayout.addWidget(self.canvas, 0, 3, 13, 1)
+        self.gridLayout.addWidget(self.canvas, 0, 3, 18, 1)
 
         MainWindow.setCentralWidget(self.centralwidget)
 
@@ -214,6 +234,11 @@ class Ui_MainWindow(object):
         self.radioButton3.setText(self._translate("MainWindow", "3e harmonique"))
         self.radioButton4.setText(self._translate("MainWindow", "4e harmonique"))
         self.radioButton5.setText(self._translate("MainWindow", "5e harmonique"))
+        self.label.setText(self._translate("MainWindow", "Amplitude") + " [m] : " + str(self.horizontalSlider.value()/10))
+        self.label_2.setText(self._translate("MainWindow", "Amplitude") + " [m] : " + str(self.horizontalSlider2.value()/10))
+        self.label_3.setText(self._translate("MainWindow", "Amplitude") + " [m] : " + str(self.horizontalSlider3.value()/10))
+        self.label_4.setText(self._translate("MainWindow", "Amplitude") + " [m] : " + str(self.horizontalSlider4.value()/10))
+        self.label_5.setText(self._translate("MainWindow", "Amplitude") + " [m] : " + str(self.horizontalSlider5.value()/10))
         self.menu_aide.setTitle(self._translate("MainWindow", "Aide"))
         self.action_propos.setText(self._translate("MainWindow", "À propos"))
 
@@ -232,6 +257,11 @@ class Ui_MainWindow(object):
         self.radioButton3.setDisabled(boolean)
         self.radioButton5.setDisabled(boolean)
         self.radioButton5.setDisabled(boolean)
+        self.label.setDisabled(boolean)
+        self.label_2.setDisabled(boolean)
+        self.label_3.setDisabled(boolean)
+        self.label_4.setDisabled(boolean)
+        self.label_5.setDisabled(boolean)
 
 
     def fermerEtAfficher(self, MainWindow, window_autre):
@@ -268,7 +298,7 @@ class Ui_MainWindow(object):
 
         # Important parameters
         nb_particules = 1
-        num_frames = 45
+        num_frames = 90
         longueur = 10
         vitesse = 1
         couleur = 'k'
@@ -278,7 +308,6 @@ class Ui_MainWindow(object):
         self.ax2 = self.figure.add_subplot(111)
 
 
-
 #        self.ax2.set_ylabel(self._translate("MainWindow", "Position") + " (m)")
 #        self.ax2.set_xlabel(self._translate("MainWindow", "Temps") + " (s)")
 
@@ -286,6 +315,9 @@ class Ui_MainWindow(object):
 
         self.ax2.axis([-1, longueur+1, -10, 10])
 #        self.ax2.set_yticks([-amplitude, 0, amplitude])
+        self.ax2.set_xticks([])
+        self.ax2.set_yticks([])
+
 
         deplacement = 0*grillex
         graph2, = self.ax2.plot(grillex, deplacement, color=couleur)
@@ -301,6 +333,7 @@ class Ui_MainWindow(object):
         [num_frames, grillex, deplacement, longueur, vitesse, graph2] = self.initAnimation()
 
         period = 2*np.pi/(2*np.pi*vitesse/(2*longueur))
+#        period = 2*period
 #        num_frames = int(num_frames*period)
 
 
@@ -339,5 +372,5 @@ class Ui_MainWindow(object):
                 omega = 5*2*np.pi*vitesse/(2*longueur)
                 deplacement = deplacement + 2*amplitude*np.sin(vecteur_onde*grillex)*np.cos(omega*temps)
             graph2.set_ydata(deplacement)
-        self.oscillation = anim.FuncAnimation(self.figure, update, frames=num_frames, repeat=True, interval=period/num_frames)
+        self.oscillation = anim.FuncAnimation(self.figure, update, frames=num_frames, repeat=True, interval=40)
         self.canvas.draw()
