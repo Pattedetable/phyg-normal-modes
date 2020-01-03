@@ -1,5 +1,7 @@
 # Modes propres
 
+![screenshot](https://raw.githubusercontent.com/Pattedetable/modes-propres/master/modes_screenshot.png)
+
 ## Français
 
 Ce programme a pour but de visualiser la superposition de différents modes propres sur une corde fixée aux deux bouts.  Dans le système d'éducation québécois, cette notion se place au niveau collégial.
