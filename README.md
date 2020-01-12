@@ -1,12 +1,14 @@
 # Modes propres
 
-![screenshot](https://raw.githubusercontent.com/Pattedetable/modes-propres/master/modes_screenshot.png)
+![screenshot](https://raw.githubusercontent.com/Pattedetable/phyg-normal-modes/master/modes_screenshot.png)
+
+_The English version follows_
 
 ## Français
 
 Ce programme a pour but de visualiser la superposition de différents modes propres sur une corde fixée aux deux bouts.  Dans le système d'éducation québécois, cette notion se place au niveau collégial.
 
-Le programme est disponible pour Linux, MacOS et Windows.  Il s'agit en même temps d'un projet personnel d'apprentissage de programmation.  Si vous trouvez des erreurs, sentez-vous bien à l'aise de les souligner à partir de l'onglet "Issues" sur [GitHub](https://github.com/Pattedetable/modes-propres).
+Le programme est disponible pour Linux, MacOS et Windows.  Il s'agit en même temps d'un projet personnel d'apprentissage de programmation.  Si vous trouvez des erreurs, sentez-vous bien à l'aise de les souligner à partir de l'onglet "Issues" sur [GitHub](https://github.com/Pattedetable/phyg-normal-modes).
 
 Le fichier utilisé pour démarrer le programme est ```modes.py```.
 
@@ -51,7 +53,7 @@ Sous Windows, vous pouvez aussi double-cliquer sur le fichier ```modes.py```.
 Le programme est distribué sous la licence GNU GPLv3.  Pour le texte complet, référez-vous au fichier `LICENSE`.
 La version courte de cette licence est que vous êtes libre d'utiliser ce logiciel, d'en modifier le code source, ainsi que de le redistribuer, que ce soit sous sa version originale ou modifiée.  Cependant, vous devez donner ces mêmes droits aux personnes qui utiliseront votre logiciel redistribué.
 
-Le code source est disponible sur [GitHub](https://github.com/Pattedetable/modes-propres).
+Le code source est disponible sur [GitHub](https://github.com/Pattedetable/phyg-normal-modes).
 
 Ce logiciel utilise des bibliothèques de Qt sous la licence LGPLv3, ainsi que de Python, Numpy et Matplotlib.
 
@@ -60,7 +62,7 @@ Ce logiciel utilise des bibliothèques de Qt sous la licence LGPLv3, ainsi que d
 
 This program serves to illustrate how multiple eigenfunctions interfere on a rope tied at both ends.  In Québec's education system, this notion belongs at the college level.
 
-This program is available for Linux, MacOS and Windows.  It is also a personal learning project.  Please report any errors you find using the "Issues" tab on [GitHub](https://github.com/Pattedetable/modes-propres).
+This program is available for Linux, MacOS and Windows.  It is also a personal learning project.  Please report any errors you find using the "Issues" tab on [GitHub](https://github.com/Pattedetable/phyg-normal-modes).
 
 The file used to start the program is ```modes.py```.
 
@@ -109,6 +111,6 @@ Moreover, on Windows, you can simply double-click on the ```modes.py``` file.
 This program is distributed under the GNU GPLv3 licence.  The details of this license can be found in the `LICENSE` file.
 The short version is that you are free to use this software, to modify its source code, and to redistribute it in either its original or modified form.  However, you have to give those same rights to the users of the redistributed software.
 
-The source code is available on [GitHub](https://github.com/Pattedetable/modes-propres).
+The source code is available on [GitHub](https://github.com/Pattedetable/phyg-normal-modes).
 
 This software uses libraries from Qt under the LGPLv3, Python, Numpy and Matplotlib.
