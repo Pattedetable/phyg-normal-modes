@@ -16,8 +16,8 @@
 #
 
 
-from PyQt5 import QtCore, QtGui, QtWidgets
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from PyQt6 import QtCore, QtGui, QtWidgets
+from matplotlib.backends.backend_qtagg import FigureCanvasQTAgg as FigureCanvas
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -51,7 +51,7 @@ class Ui_MainWindow(object):
         self.gridLayout.addWidget(self.pushButton_3, 16, 0, 1, 3)
 
 
-        spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.gridLayout.addItem(spacerItem, 15, 0, 1, 1)
 
 
@@ -64,11 +64,10 @@ class Ui_MainWindow(object):
         self.label.setObjectName("label")
         self.gridLayout.addWidget(self.label, 1, 0, 1, 1)
 
-        self.horizontalSlider = QtWidgets.QSlider(self.centralwidget)
+        self.horizontalSlider = QtWidgets.QSlider(QtCore.Qt.Orientation.Horizontal, self.centralwidget)
         self.horizontalSlider.setMinimum(0)
         self.horizontalSlider.setMaximum(10)
         self.horizontalSlider.setPageStep(5)
-        self.horizontalSlider.setOrientation(QtCore.Qt.Horizontal)
         self.horizontalSlider.setObjectName("horizontalSlider")
         self.gridLayout.addWidget(self.horizontalSlider, 2, 0, 1, 3)
 
@@ -81,11 +80,10 @@ class Ui_MainWindow(object):
         self.label_2.setObjectName("label_2")
         self.gridLayout.addWidget(self.label_2, 4, 0, 1, 1)
 
-        self.horizontalSlider2 = QtWidgets.QSlider(self.centralwidget)
+        self.horizontalSlider2 = QtWidgets.QSlider(QtCore.Qt.Orientation.Horizontal, self.centralwidget)
         self.horizontalSlider2.setMinimum(0)
         self.horizontalSlider2.setMaximum(10)
         self.horizontalSlider2.setPageStep(5)
-        self.horizontalSlider2.setOrientation(QtCore.Qt.Horizontal)
         self.horizontalSlider2.setObjectName("horizontalSlider2")
         self.gridLayout.addWidget(self.horizontalSlider2, 5, 0, 1, 3)
 
@@ -98,11 +96,10 @@ class Ui_MainWindow(object):
         self.label_3.setObjectName("label_3")
         self.gridLayout.addWidget(self.label_3, 7, 0, 1, 1)
 
-        self.horizontalSlider3 = QtWidgets.QSlider(self.centralwidget)
+        self.horizontalSlider3 = QtWidgets.QSlider(QtCore.Qt.Orientation.Horizontal, self.centralwidget)
         self.horizontalSlider3.setMinimum(0)
         self.horizontalSlider3.setMaximum(10)
         self.horizontalSlider3.setPageStep(5)
-        self.horizontalSlider3.setOrientation(QtCore.Qt.Horizontal)
         self.horizontalSlider3.setObjectName("horizontalSlider3")
         self.gridLayout.addWidget(self.horizontalSlider3, 8, 0, 1, 3)
 
@@ -115,11 +112,10 @@ class Ui_MainWindow(object):
         self.label_4.setObjectName("label_4")
         self.gridLayout.addWidget(self.label_4, 10, 0, 1, 1)
 
-        self.horizontalSlider4 = QtWidgets.QSlider(self.centralwidget)
+        self.horizontalSlider4 = QtWidgets.QSlider(QtCore.Qt.Orientation.Horizontal, self.centralwidget)
         self.horizontalSlider4.setMinimum(0)
         self.horizontalSlider4.setMaximum(10)
         self.horizontalSlider4.setPageStep(5)
-        self.horizontalSlider4.setOrientation(QtCore.Qt.Horizontal)
         self.horizontalSlider4.setObjectName("horizontalSlider4")
         self.gridLayout.addWidget(self.horizontalSlider4, 11, 0, 1, 3)
 
@@ -132,17 +128,16 @@ class Ui_MainWindow(object):
         self.label_5.setObjectName("label_5")
         self.gridLayout.addWidget(self.label_5, 13, 0, 1, 1)
 
-        self.horizontalSlider5 = QtWidgets.QSlider(self.centralwidget)
+        self.horizontalSlider5 = QtWidgets.QSlider(QtCore.Qt.Orientation.Horizontal, self.centralwidget)
         self.horizontalSlider5.setMinimum(0)
         self.horizontalSlider5.setMaximum(10)
         self.horizontalSlider5.setPageStep(5)
-        self.horizontalSlider5.setOrientation(QtCore.Qt.Horizontal)
         self.horizontalSlider5.setObjectName("horizontalSlider5")
         self.gridLayout.addWidget(self.horizontalSlider5, 14, 0, 1, 3)
 
 
         self.canvas = FigureCanvas(self.figure) # Graph
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.canvas.sizePolicy().hasHeightForWidth())
@@ -161,7 +156,7 @@ class Ui_MainWindow(object):
         self.menu_aide = QtWidgets.QMenu(self.menubar)
         self.menu_aide.setObjectName("menu_aide")
         MainWindow.setMenuBar(self.menubar)
-        self.action_propos = QtWidgets.QAction(MainWindow)
+        self.action_propos = QtGui.QAction(MainWindow)
         self.action_propos.setObjectName("action_propos")
         self.menu_aide.addAction(self.action_propos)
         self.menubar.addAction(self.menu_aide.menuAction())
