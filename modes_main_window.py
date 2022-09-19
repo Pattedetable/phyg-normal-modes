@@ -260,10 +260,11 @@ class Ui_MainWindow(object):
 
 
     def fermerEtAfficher(self, MainWindow, window_autre):
-#        if window_autre:
-#            window_autre.show()
-        app = QtWidgets.QApplication.instance()
-        app.closeAllWindows()
+        if window_autre:
+            window_autre.show()
+        MainWindow.close()
+#        app = QtWidgets.QApplication.instance()
+#        app.closeAllWindows()
 
     def stopAnim(self):
         self.oscillation.event_source.stop()
@@ -300,24 +301,19 @@ class Ui_MainWindow(object):
 
         grillex = np.linspace(0, longueur, 200)
 
-        self.ax2 = self.figure.add_subplot(111)
+        ax2 = self.figure.add_subplot(111)
 
+#        ax2.set_ylabel(self._translate("MainWindow", "Position") + " (m)")
+#        ax2.set_xlabel(self._translate("MainWindow", "Temps") + " (s)")
+#        ax2.grid(True)
+#        ax2.set_yticks([-amplitude, 0, amplitude])
 
-#        self.ax2.set_ylabel(self._translate("MainWindow", "Position") + " (m)")
-#        self.ax2.set_xlabel(self._translate("MainWindow", "Temps") + " (s)")
-
-#        self.ax2.grid(True)
-
-        self.ax2.axis([-1, longueur+1, -10, 10])
-#        self.ax2.set_yticks([-amplitude, 0, amplitude])
-        self.ax2.set_xticks([])
-        self.ax2.set_yticks([])
-
+        ax2.axis([-1, longueur+1, -10, 10])
+        ax2.set_xticks([])
+        ax2.set_yticks([])
 
         deplacement = 0*grillex
-        graph2, = self.ax2.plot(grillex, deplacement, color=couleur)
-
-
+        graph2, = ax2.plot(grillex, deplacement, color=couleur)
 
         return num_frames, grillex, deplacement, longueur, vitesse, graph2
 
@@ -331,14 +327,9 @@ class Ui_MainWindow(object):
 #        period = 2*period
 #        num_frames = int(num_frames*period)
 
-
         tempss = np.linspace(0, period, num_frames)
-        self.frames_particles = []
 
         def update(i):
-            for frame in self.frames_particles:
-                frame.remove()
-            self.frames_particles = []
             temps = tempss[i]
             deplacement = 0
             if self.radioButton.isChecked():
@@ -369,3 +360,4 @@ class Ui_MainWindow(object):
             graph2.set_ydata(deplacement)
         self.oscillation = anim.FuncAnimation(self.figure, update, frames=num_frames, repeat=True, interval=40)
         self.canvas.draw()
+
