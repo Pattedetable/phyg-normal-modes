@@ -1,6 +1,6 @@
 # Modes propres
 
-![screenshot](https://raw.githubusercontent.com/Pattedetable/phyg-normal-modes/master/modes_screenshot.png)
+![screenshot](https://raw.githubusercontent.com/Pattedetable/phyg-normal-modes/qt6/images/modes_screenshot.png)
 
 _The English version follows_
 
